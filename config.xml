@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>Soccer Scout</name>
+<icon src="icono.jpg" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="splash.jpg" gap:platform="androdid" gap:density="ldpi" />
+<gap:splash src="splash.jpg" gap:platform="androdid" gap:density="mdpi" />
+<gap:splash src="splash.jpg" gap:platform="androdid" gap:density="hdpi" />
+<gap:splash src="splash.jpg" gap:platform="androdid" gap:density="xhdpi" />
+<preferencias name="permissions" value="none" />
+<description>
+Aplicación para Ojeadores de futbol.
+</description>
+
+<author href="https://www.alpeot.es" email="info@alpeot.es">
+Alfonso PEREZ
+</author>
+
+</widget>
