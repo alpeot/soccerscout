@@ -1,0 +1,219 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Soccer Scout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="inicio" style="height:100%;background-image:url(background.png); background-repeat:no-repeat; background-size:100% 100%;">
+	<div data-role="header">
+		<h1>Soccer Scout</h1>
+	</div>
+	<div data-role="main" class="ui-content" >	
+		<div id="rejillainicio" class="ui-grid-b" align="center">
+            <div class="ui-block-a"><a href="#plantilla"><img src="plantilla.png" style="width:50%"><span class="fondomenu">Jugadores</span></a>
+            </div>
+            <div class="ui-block-b"><a href="#calendario"><img src="calendario.png" style="width:50%"><span class="fondomenu">Calendario</span></a>
+            </div>
+            <div class="ui-block-c"><a href="#partidos"><img src="partidos.png" style="width:50%"><span class="fondomenu">Partidos</span></a>
+            </div>
+            <div class="ui-block-a"><a href="#equipos"><img src="equipos.png" style="width:50%"><span class="fondomenu">Equipos</span></a>
+            </div>
+            <div class="ui-block-b"><a href="#clasificacion"><img src="clasificacion.png" style="width:50%"><span class="fondomenu">Clasificación</span></a>
+            </div>
+            <div class="ui-block-c"><a href="#estadisticas"><img src="estadisticas.png" style="width:50%"><span class="fondomenu">Estadísticas</span></a>
+            </div>
+            <div class="ui-block-a"><a href="#ajustes"><img src="ajustes.png" style="width:50%"><span class="fondomenu">Ajustes</span></a>
+            </div>
+            <div class="ui-block-b"><a href="#resultados"><img src="resultados.png" style="width:50%"><span class="fondomenu">Resultados</span></a>
+            </div>
+            <div class="ui-block-c"><a href="#reglamento"><img src="reglamento.png" style="width:50%"><span class="fondomenu">Reglamento</span></a>
+            </div>
+            <div class="ui-block-a"><a href="#salir"><img src="salir.png" style="width:50%"><span class="fondomenu">Salir</span></a>
+            </div>
+            <div class="ui-block-b"><a href="#ayuda"><img src="ayuda.png" style="width:50%"><span class="fondomenu">Ayuda</span></a>
+            </div>
+            <div class="ui-block-c"><a href="#acercade"><img src="acercade.png" style="width:50%"><span class="fondomenu">Acerca De..</span></a>
+            </div>
+        </div>		
+	</div>
+	<div data-role="footer">
+		<h4>Developed by AlpeoT</h4>
+	</div>
+</div>
+
+<div data-role="page" id="plantilla" data-add-back-btn="true" style="height:100%;background-image:url(background.png); background-repeat:no-repeat; background-size:100% 100%;">
+	<div data-role="header">
+		<h1>Jugadores</h1>
+	</div>
+	<div data-role="content">	
+		<img src="nofoto.fw.png" style="width:25%; float:left;">
+        <fieldset style="padding-left:10px; padding-right:5px;"><legend style="color:#fff; font-size:1em;">Nombre Deportivo:</legend><input type="text" id="nombredeportivoplantilla" width="50%" style="height:10px;"></fieldset>
+        <fieldset style="padding-left:10px; padding-right:5px;"><legend style="color:#fff; font-size:1em;">Nombre:</legend><input type="text" id="nombredeportivoplantilla" width="25%" style="height:10px;"></fieldset>
+        <fieldset style="padding-left:10px; padding-right:5px;"><legend style="color:#fff; font-size:1em;">Apellidos:</legend><input type="text" id="nombredeportivoplantilla" width="25%" style="height:10px;"></fieldset>
+        <fieldset style="padding-left:10px; padding-right:5px;"><legend style="color:#fff; font-size:1em;">Posici&oacute;n:</legend>
+        	<select id="posicionplantilla" width="25%" style="height:10px;">
+                <option>Portero</option>
+                <option>Central</option>
+                <option>Central Izquierdo</option>
+                <option>Central Derecho</option>
+                <option>Lateral Izquierdo</option>
+                <option>Lateral Derecho</option>
+                <option>Pivote Defensivo</option>
+                <option>Centrocampista</option>
+                <option>Mediocentro Defensivo</option>
+                <option>Media Punta</option>
+                <option>Mediocentro Ofensivo</option>
+                <option>Jugador de Campo</option>
+                <option>Medio Izquierdo</option>
+                <option>Mediocentro Ofensivo</option>
+                <option>Medio Derecho</option>
+                <option>Delantero</option>
+                <option>Medio Derecho</option>
+                <option>Segundo Delantero</option>
+                <option>Extremo Derecho</option>
+                <option>Extremo Izquierdo</option>
+                <option>Interior Derecho</option>
+                <option>Interior Izquierdo</option>
+        	</select>
+        </fieldset>
+        <fieldset style="padding-left:10px; width:350px; padding-right:5px;">
+        	<legend style="color:#fff; font-size:1em;">Fecha de Nacimiento:</legend>
+            <fieldset style="width:100px;float:left;">
+                <select id="dianacimiento" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+            </fieldset>
+            <fieldset style="width:100px;float:left;">
+                <select id="posicionplantilla">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+            </fieldset>
+            <fieldset style="width:150px;float:left;">        
+                <select id="posicionplantilla">
+                    <option>1980</option>
+                    <option>1981</option>
+                    <option>1982</option>
+                    <option>1983</option>
+                    <option>1984</option>
+                    <option>1985</option>
+                    <option>1986</option>
+                    <option>1987</option>
+                    <option>1988</option>
+                    <option>1989</option>
+                    <option selected>1990</option>
+                    <option>1991</option>
+                    <option>1992</option>
+                    <option>1993</option>
+                    <option>1994</option>
+                    <option>1995</option>
+                    <option>1996</option>
+                    <option>1997</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                    <option>2001</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                    <option>2005</option>
+                    <option>2006</option>
+                    <option>2007</option>
+                    <option>2008</option>
+                    <option>2009</option>
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                </select>
+            </fieldset>
+		</fieldset>
+	</div>
+	<div data-role="footer">
+		<h4>Developed by AlpeoT</h4>
+	</div>
+</div>
+
+<div data-role="page" id="partidos">
+	<div data-role="header">
+		<h1>Partidos</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4><a href="#inicio">Inicio</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="estadisticas">
+	<div data-role="header">
+		<h1>Estad&iacute;sticas</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4><a href="#inicio">Inicio</a></h4>
+	</div>
+</div>
+
+<div data-role="page" id="ajustes">
+	<div data-role="header">
+		<h1>Configuraci&oacute;n</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4><a href="#inicio">Inicio</a></h4>
+	</div>
+</div>
+</body>
+</html>
